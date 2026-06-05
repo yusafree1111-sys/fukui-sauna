@@ -69,7 +69,7 @@ const IMAGES = {
   fukuiyuta: 'PHOTO/fukuiyuta.png',
   fukuiyuta2: 'PHOTO/fukuiyuta2.jpg',
   deru: 'PHOTO/deru.png',
-  fukuiyuta3: 'PHOTO/fukuiyuta3.png',
+  fukuiyuta3: 'PHOTO/fukuiyuta4.png',
   fukuiyuta4: 'PHOTO/fukuiyuta4.png',
   fukuiyuta5: 'PHOTO/fukuiyuta5.png',
   rabbit_guts: 'PHOTO/こくみんうさぎ_ガッツポーズ.png',
@@ -206,7 +206,7 @@ function updateHUD() {
   }
 
   // キャラクターの大きさと震えを温度に応じて動的変更
-  const dynamicScale = 1 + (tempPercent / 100) * 0.5; // 初期400pxを基準に、最大1.5倍まで拡大
+  const dynamicScale = 0.75 + (tempPercent / 100) * 0.5; // 75%からスタートして拡大
   let dynamicShake = 0;
   if (state.temperature >= 75) {
     dynamicShake = ((state.temperature - 75) / 25) * 15; // 75度以上で最大15pxの激しい震え
