@@ -412,7 +412,7 @@ function showResult() {
   // シェアテキスト
   // ※URLを含めることでTwitter側でOGP画像が自動的に表示されます。本番公開時は実際のゲームURLに変更してください。
   const shareUrl = "https://x.com/dpfp_fukui/status/2055632633292612012?s=20"; 
-  const shareText = `🔥 サウナde政策！限界耐久ゲームで${state.score.toLocaleString()}点！\nランク：${rank.icon}「${rank.name}」\n${rank.catchcopy}\nあなたもサウナで政策を判定してみよう！\n#サウナde政策 #福井ゆうた #大田区\n${shareUrl}`;
+  const shareText = `🔥 サウナde政策！限界耐久ゲームで${state.score.toLocaleString()}点！\nランク：${rank.icon}「${rank.name}」\n${rank.catchcopy}\nあなたもサウナで政策を判定してみよう！\n#国民民主党サウナ部 #サウナde政策 #福井ゆうた #大田区\n${shareUrl}`;
   els.resultShareText.textContent = shareText;
   els.resultShareText.dataset.shareText = shareText;
 
